@@ -139,5 +139,13 @@
       "type": "4 Bedroom",
       "date": "1st September, 2024"
     }
+  ],
+  "userjobs": [
+    {
+      "username": "odhiambomoses08",
+      "location": "Nairobi",
+      "jobPicked": "type",
+      "deadline": "type date"
+    }
   ]
 }

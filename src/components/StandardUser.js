@@ -42,12 +42,35 @@ const StandardUser = () => {
     setDisplay(Jobs);
   }
 
+  const [pending, setPending] = useState([]);
+  useEffect(() => {
+    pendingDisplay();
+  }, []);
+
+  function pendingDisplay() {
+    axios.get("http://localhost:8000/userjobs").then((result) => {
+      setPending(result.data);
+    });
+  }
   function handlePending() {
     function Pending() {
       return (
         <>
           <h1>Pending Jobs</h1>
-          {}
+          {pending.map((job, index) => (
+            <div key={index} className="job-container">
+              <div className="jobList">
+                <ol>
+                  <li>{index + 1}</li>
+                </ol>
+                <h2>{job.username}</h2>
+                <p>{job.location}</p>
+                <p>{job.jobPicked}</p>
+                <p>{job.deadline}</p>
+              </div>
+              <button>Mark as Done</button>
+            </div>
+          ))}
         </>
       );
     }

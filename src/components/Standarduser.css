@@ -101,7 +101,8 @@ aside {
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  width: 400px;
+  width: auto;
+  padding-right: 10px;
 }
 .job-container:hover {
   cursor: pointer;
