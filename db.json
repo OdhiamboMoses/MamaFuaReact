@@ -32,6 +32,17 @@
       "username": "lapster",
       "password": "qwerty",
       "cpassword": "qwerty"
+    },
+    {
+      "id": "234567",
+      "fname": "Zach",
+      "lname": "Zakayo",
+      "gender": "on",
+      "location": "Nakuru",
+      "accType": "Personal",
+      "username": "zakayo24",
+      "password": "zakayo24",
+      "cpassword": "zakayo24"
     }
   ],
   "isLogged": [
@@ -88,6 +99,441 @@
       "username": "odhiambomoses08",
       "password": "123",
       "logged": true
+    },
+    {
+      "id": "12f9",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "f167",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "39ac",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "e00f",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "c108",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "d04a",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "b361",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "d377",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "dc1d",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "4e74",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "f6a2",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "a9c7",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "e842",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "3225",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "e9e5",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "8e8b",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "82be",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "07e9",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "d091",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "5639",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "ef9e",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "a602",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "33a1",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "80f4",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "e58f",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "8a1e",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "229b",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "8b0e",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "d634",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "4efb",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "4b9c",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "8d07",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "7ce8",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "e08d",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "c480",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "7ded",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "0e99",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "e99c",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "588b",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "bbfe",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "19c4",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "4411",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "f760",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "4050",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "a67b",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "474f",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "0698",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "26d8",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "1567",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "ed9d",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "a16b",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "ebf9",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "1bc2",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "1675",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "5eb7",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "59c2",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "54b0",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "1380",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "0139",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "9e8d",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "bc35",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "d315",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "ba01",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "f453",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "1e00",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "e1b0",
+      "username": "zakayo24",
+      "logged": true
+    },
+    {
+      "id": "ead0",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "9ee7",
+      "username": "zakayo24",
+      "logged": true
+    },
+    {
+      "id": "4881",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "dc31",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "890f",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "2030",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "f98d",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "adf7",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "6a1d",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "76df",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "7c24",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "2e14",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "2b35",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "1205",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "1544",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "d7e1",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "fcd7",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "8524",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "6fbd",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "315d",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "63c0",
+      "username": "odhiambomoses08",
+      "logged": true
     }
   ],
   "jobs": [
@@ -142,8 +588,26 @@
   ],
   "userjobs": [
     {
-      "username": "odhiambomoses08",
+      "username": "lapster",
       "location": "Nairobi",
+      "jobPicked": "type",
+      "deadline": "type date"
+    },
+    {
+      "username": "lapster",
+      "location": "Nairobi",
+      "jobPicked": "type",
+      "deadline": "type date"
+    },
+    {
+      "username": "odhiambomoses08",
+      "location": "Kisumu",
+      "jobPicked": "type",
+      "deadline": "type date"
+    },
+    {
+      "username": "odhiambomoses08",
+      "location": "Mombassa",
       "jobPicked": "type",
       "deadline": "type date"
     }

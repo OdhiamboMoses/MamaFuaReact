@@ -122,3 +122,23 @@ aside {
   color: #444;
   margin-top: 10px;
 }
+
+.btnStyle {
+  background-color: #99ffbc;
+  color: #444;
+}
+
+#prof-pic {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: green;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.91);
+  font-size: larger;
+}

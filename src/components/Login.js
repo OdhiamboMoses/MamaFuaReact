@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Login.css";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import Navbar from "./Navbar";
 
 function Login() {
+  useEffect(() => {
+    localStorage.clear();
+  });
   const [FormData, setFormData] = useState({
     username: "",
     password: "",
-    logged: false,
   });
 
   const [errors, setErrors] = useState({});
@@ -20,6 +22,7 @@ function Login() {
 
     let isValid = true;
     let validationErrors = {};
+
     if (FormData.password.length < 3) {
       isValid = false;
       validationErrors.password = "Check Password length";
@@ -27,26 +30,45 @@ function Login() {
 
     if (Object.keys(validationErrors).length === 0) {
       axios.get("http://localhost:8000/users").then((result) => {
-        result.data.map((user) => {
+        let userFound = false;
+
+        result.data.forEach((user) => {
           if (user.username === FormData.username) {
+            userFound = true;
             if (user.password === FormData.password) {
-              FormData.logged = true;
-              if (FormData.logged && user.username === FormData.username) {
-                axios.post("http://localhost:8000/isLogged", FormData);
-              }
+              // Set the user session in localStorage
+              localStorage.setItem(
+                "username",
+                JSON.stringify({
+                  username: FormData.username,
+                  fname: user.fname,
+                  lname: user.lname,
+                  logged: true,
+                })
+              );
+              axios.post("http://localhost:8000/isLogged", {
+                username: FormData.username,
+                logged: true,
+              });
               navigate("../standardUser");
             } else {
               isValid = false;
               validationErrors.password = "Wrong Password";
             }
-          } else if (FormData.username === "") {
-            isValid = false;
-            validationErrors.username = "Username is required";
           }
         });
+
+        if (!userFound && FormData.username === "") {
+          isValid = false;
+          validationErrors.username = "Username is required";
+        }
+
         setErrors(validationErrors);
         setValid(isValid);
       });
+    } else {
+      setErrors(validationErrors);
+      setValid(isValid);
     }
   }
 
@@ -84,9 +106,7 @@ function Login() {
                 LOGIN
               </button>
               <div id="auth-error">
-                {valid ? (
-                  <></>
-                ) : (
+                {valid ? null : (
                   <span>
                     {errors.password} {errors.username}
                   </span>

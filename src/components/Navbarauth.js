@@ -32,14 +32,16 @@ const Navbarauth = () => {
       <div className="nav-links">
         <ul>
           <li>
-            <Link to="/standardUser">HOME</Link>
+            <Link to="/standardUser">DASHBOARD</Link>
+          </li>
+          <li>
+            <Link to="">PENDING</Link>
           </li>
           <li>
             <Link to="">JOBS</Link>
           </li>
-
           <li>
-            <Link to="/">SIGN-OUT</Link>
+            <Link to="">PROFILE</Link>
           </li>
         </ul>
       </div>
