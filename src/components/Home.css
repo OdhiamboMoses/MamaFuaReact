@@ -1,0 +1,70 @@
+#home {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./images/cleanup.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+
+#home span {
+  color: #138817;
+  text-shadow: 1px 1px#141010;
+}
+.home-display-footer {
+  height: 80px;
+  width: 100%;
+  background-color: #736d6d;
+}
+
+#home-main h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3.5rem;
+  padding: 34px 20px;
+  line-height: 6rem;
+  color: #141010;
+  text-shadow: 1px 2px 2px #138817;
+}
+
+.bg-btn {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 27px;
+  top: 260px;
+  font-size: 2rem;
+  color: #736d6d;
+}
+
+#chatBtn {
+  position: fixed;
+  height: 70px;
+  width: 70px;
+  right: 10px;
+  bottom: 30px;
+  border-radius: 50%;
+  border: 1px solid #138817;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #138817;
+  z-index: 101;
+  box-shadow: 1px 2px 2px black;
+}
+.bigger {
+  font-size: 3rem;
+}
+
+i:hover {
+  cursor: pointer;
+  color: #138817;
+}

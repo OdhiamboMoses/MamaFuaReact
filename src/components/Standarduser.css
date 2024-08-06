@@ -1,0 +1,123 @@
+aside {
+  width: 250px;
+  height: 91vh;
+  background-color: #aa9f9f;
+  color: #f2f2f2;
+  box-shadow: 2px -1px 3px #736d6d;
+  position: relative;
+}
+
+.aside-toggle {
+  position: absolute;
+  height: 70px;
+  width: 40px;
+  background-color: #c8c7c7;
+  right: -40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: black;
+  box-shadow: 1px 2px 2px #444;
+  border-radius: 4px;
+}
+
+.dash-links {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.dash-links a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.dash-links button {
+  padding: 10px;
+  font-size: larger;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: none;
+  border-radius: 2px;
+}
+.dash-links button:focus {
+  background-color: #99ffbc;
+  color: royalblue;
+}
+
+.dash-links button:hover {
+  color: black;
+  background-color: #99ffbc;
+  box-shadow: 1px 2px 2px #444;
+  cursor: pointer;
+}
+
+#ui-layout {
+  display: flex;
+  gap: 50px;
+  background-color: whitesmoke;
+}
+
+#display {
+  height: 91vh;
+  width: 80%;
+  background-color: #d9d9d9;
+}
+
+.dash-title {
+  width: 100%;
+  height: 90px;
+  background-color: whitesmoke;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #444;
+}
+
+.dash-body {
+  height: 450px;
+  overflow-y: scroll;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.32);
+}
+.job-container {
+  border: 1px solid #444;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.87);
+  padding: 8px;
+  background-color: whitesmoke;
+  margin: 3px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.jobList {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+.job-container:hover {
+  cursor: pointer;
+  background-color: azure;
+  color: #444;
+}
+.job-container button:hover {
+  color: whitesmoke;
+  cursor: pointer;
+  background-color: green;
+  border: 1px solid royalblue;
+}
+
+.dash-body h1 {
+  text-align: center;
+  font-weight: 400;
+  color: #444;
+  margin-top: 10px;
+}

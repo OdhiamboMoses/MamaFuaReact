@@ -1,0 +1,22 @@
+.error {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+}
+
+.display {
+  padding: 20px 20px;
+}
+
+button {
+  margin-left: 20px;
+  padding: 10px 15px;
+  background-color: royalblue;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+}

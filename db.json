@@ -1,0 +1,143 @@
+{
+  "users": [
+    {
+      "id": "1234567",
+      "fname": "Odhiambo",
+      "lname": "Moses",
+      "gender": "on",
+      "location": "Nairobi",
+      "accType": "Personal",
+      "username": "odhiambomoses08",
+      "password": "123",
+      "cpassword": "123"
+    },
+    {
+      "id": "123456",
+      "fname": "Odhiambo",
+      "lname": "Moses",
+      "gender": "on",
+      "location": "Nairobi",
+      "accType": "Personal",
+      "username": "odhiambomoses08",
+      "password": "123",
+      "cpassword": "123"
+    },
+    {
+      "id": "668800",
+      "fname": "goody",
+      "lname": "ndahi",
+      "gender": "on",
+      "location": "Nairobi",
+      "accType": "Personal",
+      "username": "lapster",
+      "password": "qwerty",
+      "cpassword": "qwerty"
+    }
+  ],
+  "isLogged": [
+    {
+      "id": "f633",
+      "username": "lapster",
+      "password": "qwerty",
+      "logged": true
+    },
+    {
+      "id": "7a2d",
+      "username": "odhiambomoses08",
+      "password": "123",
+      "logged": true
+    },
+    {
+      "id": "062d",
+      "username": "odhiambomoses08",
+      "password": "123",
+      "logged": true
+    },
+    {
+      "id": "377f",
+      "username": "odhiambomoses08",
+      "password": "123",
+      "logged": true
+    },
+    {
+      "id": "825d",
+      "username": "odhiambomoses08",
+      "password": "123",
+      "logged": true
+    },
+    {
+      "id": "bfdb",
+      "username": "odhiambomoses08",
+      "password": "123",
+      "logged": true
+    },
+    {
+      "id": "720a",
+      "username": "odhiambomoses08",
+      "password": "123",
+      "logged": true
+    },
+    {
+      "id": "6da6",
+      "username": "odhiambomoses08",
+      "password": "123",
+      "logged": true
+    },
+    {
+      "id": "9f1c",
+      "username": "odhiambomoses08",
+      "password": "123",
+      "logged": true
+    }
+  ],
+  "jobs": [
+    {
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024"
+    },
+    {
+      "name": "Diani Beach",
+      "location": "Mombassa",
+      "type": "2 Bedroom",
+      "date": "20th September, 2024"
+    },
+    {
+      "name": "State House",
+      "location": "Eldoret",
+      "type": "1 Bedroom",
+      "date": "17th January, 2025"
+    },
+    {
+      "name": "Diani Beach",
+      "location": "Mombassa",
+      "type": "2 Bedroom",
+      "date": "20th September, 2024"
+    },
+    {
+      "name": "State House",
+      "location": "Eldoret",
+      "type": "1 Bedroom",
+      "date": "17th January, 2025"
+    },
+    {
+      "name": "Diani Beach",
+      "location": "Mombassa",
+      "type": "2 Bedroom",
+      "date": "20th September, 2024"
+    },
+    {
+      "name": "State House",
+      "location": "Eldoret",
+      "type": "1 Bedroom",
+      "date": "17th January, 2025"
+    },
+    {
+      "name": "SwafeSwafe House",
+      "location": "Nairobi",
+      "type": "4 Bedroom",
+      "date": "1st September, 2024"
+    }
+  ]
+}
