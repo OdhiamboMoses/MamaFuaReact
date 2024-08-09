@@ -55,6 +55,10 @@ function Login() {
               isValid = false;
               validationErrors.password = "Wrong Password";
             }
+          } else {
+            validationErrors.username = "Username does not exist";
+            setErrors(validationErrors);
+            isValid = false;
           }
         });
 
@@ -108,7 +112,7 @@ function Login() {
               <div id="auth-error">
                 {valid ? null : (
                   <span>
-                    {errors.password} {errors.username}
+                    {`${errors.password} or `} {errors.username}
                   </span>
                 )}
               </div>

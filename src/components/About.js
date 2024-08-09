@@ -8,7 +8,7 @@ function About() {
     <>
       <Navbar />
       <div id="about">
-        <div className="left">
+        <div className="about-left">
           <h3>About</h3>
           <p>
             Mama Fua App is an innovative application designed to seamlessly

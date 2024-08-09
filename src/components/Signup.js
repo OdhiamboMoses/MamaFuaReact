@@ -17,6 +17,8 @@ function Signup() {
     password: "",
     cpassword: "",
     balance: "0",
+    email: "",
+    type: "standard",
   });
 
   const [errors, setErrors] = useState({});

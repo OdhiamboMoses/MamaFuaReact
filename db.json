@@ -9,7 +9,10 @@
       "accType": "Personal",
       "username": "odhiambomoses08",
       "password": "123",
-      "cpassword": "123"
+      "cpassword": "123",
+      "balance": "0",
+      "email": "odhiambomoses08@gmail.com",
+      "type": "admin"
     },
     {
       "id": "668800",
@@ -20,7 +23,10 @@
       "accType": "Personal",
       "username": "lapster",
       "password": "qwerty",
-      "cpassword": "qwerty"
+      "cpassword": "qwerty",
+      "balance": "0",
+      "email": "",
+      "type": "standard"
     },
     {
       "id": "234567",
@@ -32,7 +38,9 @@
       "username": "zakayo24",
       "password": "zakayo24",
       "cpassword": "zakayo24",
-      "balance": "0"
+      "balance": "0",
+      "email": "",
+      "type": "standard"
     },
     {
       "id": "123449",
@@ -44,7 +52,8 @@
       "username": "erick24",
       "password": "erick24",
       "cpassword": "erick24",
-      "balance": "0"
+      "balance": "0",
+      "email": ""
     },
     {
       "id": "2345428",
@@ -56,7 +65,8 @@
       "username": "ben",
       "password": "123",
       "cpassword": "123",
-      "balance": "3000"
+      "balance": "3000",
+      "email": ""
     }
   ],
   "isLogged": [
@@ -758,6 +768,21 @@
       "id": "0cb6",
       "username": "odhiambomoses08",
       "logged": true
+    },
+    {
+      "id": "ef18",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "dece",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "0093",
+      "username": "lapster",
+      "logged": true
     }
   ],
   "jobs": [
@@ -1053,6 +1078,17 @@
       "date": "17th January, 2025",
       "staff": "",
       "username": "odhiambomoses08"
+    }
+  ],
+  "support": [
+    {
+      "username": "odhiambomoses08",
+      "email": "odhiambomoses08@gmail.com",
+      "message": "test"
+    },
+    {
+      "id": "e9a0",
+      "username": "lapster"
     }
   ]
 }

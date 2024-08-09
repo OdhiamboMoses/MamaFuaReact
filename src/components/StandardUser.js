@@ -12,6 +12,8 @@ const StandardUser = () => {
   const [pending, setPending] = useState([]);
   const [location, setLocation] = useState("");
   const [balance, setBalance] = useState("0");
+  const [email, setEmail] = useState("");
+  const [support, setSupport] = useState({});
 
   useEffect(() => {
     const username = JSON.parse(localStorage.getItem("username"));
@@ -28,6 +30,7 @@ const StandardUser = () => {
           if (user) {
             setBalance(user.balance || "0");
             setLocation(user.location || "");
+            setEmail(user.email || "");
           }
         })
         .catch((error) => {
@@ -35,6 +38,26 @@ const StandardUser = () => {
         });
     }
   }, [navigate]);
+
+  function handleUpdate(e) {
+    e.preventDefault();
+    if (email) {
+      const username = uname;
+      axios
+        .get(`http://localhost:8000/users/${username.username}`)
+        .then((res) => {
+          const user = res.data.find((user) => user.username === username);
+          if (user) {
+            axios.patch(`http://localhost:8000/users/${username}`, {
+              email: email,
+            });
+          }
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
+    }
+  }
 
   useEffect(() => {
     jobDisplay();
@@ -170,24 +193,47 @@ const StandardUser = () => {
     setDisplay(<Notifications />);
   }
 
+  function supportRequest(e) {
+    e.preventDefault();
+    axios
+      .post("http://localhost:8000/support", support)
+      .then((result) => {})
+      .catch((err) => console.log(err));
+  }
+
   function handleSupport() {
     const Support = () => (
       <>
         <h1>Admin Support</h1>
-        {/* Add your support rendering logic here */}
-        <div className="form-body">
-          <div className="left"></div>
-          <form id="support-form">
-            <h2>Support Form</h2>
-            <label>Enter Email</label>
-            <input type="email" />
+        {
+          /* Add your support rendering logic here */
+          <div className="form-body">
+            <div className="left"></div>
+            <form id="support-form" onSubmit={supportRequest}>
+              <h2>Support Form</h2>
+              <label>Enter Email</label>
+              <input
+                type="email"
+                id="email"
+                onChange={(event) =>
+                  setSupport({ ...support, email: event.target.value })
+                }
+              />
 
-            <label>Support Subject</label>
-            <textarea rows="5" cols="6"></textarea>
+              <label>Support Subject</label>
+              <textarea
+                rows="5"
+                cols="6"
+                id="message"
+                onChange={(event) =>
+                  setSupport({ ...support, message: event.target.value })
+                }
+              ></textarea>
 
-            <button>Send Message</button>
-          </form>
-        </div>
+              <button className="btn">Send Message</button>
+            </form>
+          </div>
+        }
       </>
     );
     setDisplay(<Support />);
@@ -204,12 +250,22 @@ const StandardUser = () => {
           <label>Your Last Name :</label>
           <input type="text" value={uname.lname} disabled />
           <label>Your Email :</label>
-          <input type="email" id="email" />
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(event) =>
+              setEmail({ ...email, email: event.target.value })
+            }
+          />
           <label>Location :</label>
           <input type="text" value={location} disabled />
           <label>Account Balance :</label>
           <input type="text" value={`Ksh. ${balance}`} disabled />
-          <button>Withdraw Cash</button>
+          <button className="btn">Withdraw Cash</button> <br />
+          <button className="btn btn-success" onClick={handleUpdate}>
+            Update Details
+          </button>
         </div>
       </>
     );
@@ -282,8 +338,8 @@ const StandardUser = () => {
                 <div className="welcome">
                   <p>
                     Welcome, {uname.fname} <br /> Mama Fua App ensures a high
-                    standard of cleaning by connecting users with vetted and
-                    experienced cleaners, offering a trusted solution for
+                    standard of cleaning by connecting apartments with vetted
+                    and experienced cleaners, offering a trusted solution for
                     maintaining clean and comfortable living spaces.
                   </p>
                 </div>
