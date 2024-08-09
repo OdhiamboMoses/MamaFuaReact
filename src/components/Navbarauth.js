@@ -35,13 +35,7 @@ const Navbarauth = () => {
             <Link to="/standardUser">DASHBOARD</Link>
           </li>
           <li>
-            <Link to="">PENDING</Link>
-          </li>
-          <li>
-            <Link to="">JOBS</Link>
-          </li>
-          <li>
-            <Link to="">PROFILE</Link>
+            <Link to="/login">SIGN-OUT</Link>
           </li>
         </ul>
       </div>
@@ -60,13 +54,7 @@ const Navbarauth = () => {
         />
         <ul>
           <li>
-            <Link to="/standardUser">HOME</Link>
-          </li>
-          <li>
-            <Link to="/jobs">JOBS</Link>
-          </li>
-          <li>
-            <Link to="/">SIGN-OUT</Link>
+            <Link to="/login">SIGN-OUT</Link>
           </li>
         </ul>
       </div>

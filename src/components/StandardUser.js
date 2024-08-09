@@ -10,6 +10,8 @@ const StandardUser = () => {
   const [uname, setName] = useState([]);
   const [display, setDisplay] = useState(null);
   const [pending, setPending] = useState([]);
+  const [location, setLocation] = useState("");
+  const [balance, setBalance] = useState("0");
 
   useEffect(() => {
     const username = JSON.parse(localStorage.getItem("username"));
@@ -17,6 +19,20 @@ const StandardUser = () => {
       navigate("/login");
     } else {
       setName(username);
+      axios
+        .get("http://localhost:8000/users")
+        .then((res) => {
+          const user = res.data.find(
+            (user) => user.username === username.username
+          );
+          if (user) {
+            setBalance(user.balance || "0");
+            setLocation(user.location || "");
+          }
+        })
+        .catch((error) => {
+          console.error(error.message);
+        });
     }
   }, [navigate]);
 
@@ -44,6 +60,21 @@ const StandardUser = () => {
     });
   }
 
+  function handleAcceptJob(job) {
+    const username = JSON.parse(localStorage.getItem("username"));
+    axios
+      .post("http://localhost:8000/userjobs", {
+        ...job,
+        username: username.username,
+      })
+      .then(() => {
+        setPending([...pending, { ...job, job }]);
+      })
+      .catch((error) => {
+        console.error("There was an error accepting the job!", error);
+      });
+  }
+
   function handleJobDisplay() {
     const Jobs = () => (
       <>
@@ -58,12 +89,27 @@ const StandardUser = () => {
               <p>{job.location}</p>
               <p>{job.type}</p>
             </div>
-            <button>Accept Job Request</button>
+            <button onClick={() => handleAcceptJob(job)}>
+              Accept Job Request
+            </button>
           </div>
         ))}
       </>
     );
     setDisplay(<Jobs />);
+  }
+
+  function handleAsideHide() {
+    const asideDiv = document.getElementById("aside-toggle");
+    const asideDisplay = document.getElementById("aside-container");
+
+    asideDiv.addEventListener("click", function () {
+      if (asideDisplay.style.left === "-250px") {
+        asideDisplay.style.left = "0";
+      } else {
+        asideDisplay.style.left = "-250px";
+      }
+    });
   }
 
   function handlePending() {
@@ -76,10 +122,10 @@ const StandardUser = () => {
               <ol>
                 <li>{index + 1}</li>
               </ol>
-              <h2>{job.username}</h2>
+              <h2>{job.name}</h2>
               <p>{job.location}</p>
-              <p>{job.jobPicked}</p>
-              <p>{job.deadline}</p>
+              <p>{job.type}</p>
+              <p>{job.date}</p>
             </div>
             <button>Mark as Done</button>
           </div>
@@ -94,6 +140,31 @@ const StandardUser = () => {
       <>
         <h1>Your Notifications</h1>
         {/* Add your notification rendering logic here */}
+        <div>
+          <table id="notification-table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Date</th>
+                <th>Deadline</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+              </tr>
+              <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+              </tr>
+            </tbody>
+
+            <tfoot></tfoot>
+          </table>
+        </div>
       </>
     );
     setDisplay(<Notifications />);
@@ -104,6 +175,19 @@ const StandardUser = () => {
       <>
         <h1>Admin Support</h1>
         {/* Add your support rendering logic here */}
+        <div className="form-body">
+          <div className="left"></div>
+          <form id="support-form">
+            <h2>Support Form</h2>
+            <label>Enter Email</label>
+            <input type="email" />
+
+            <label>Support Subject</label>
+            <textarea rows="5" cols="6"></textarea>
+
+            <button>Send Message</button>
+          </form>
+        </div>
       </>
     );
     setDisplay(<Support />);
@@ -112,8 +196,21 @@ const StandardUser = () => {
   function handleProfile() {
     const Profile = () => (
       <>
-        <h1>Your Profile</h1>
+        <h1>Accout Details</h1>
         {/* Add your profile rendering logic here */}
+        <div className="acc-details">
+          <label>Your First Name :</label>
+          <input type="text" value={uname.fname} disabled />
+          <label>Your Last Name :</label>
+          <input type="text" value={uname.lname} disabled />
+          <label>Your Email :</label>
+          <input type="email" id="email" />
+          <label>Location :</label>
+          <input type="text" value={location} disabled />
+          <label>Account Balance :</label>
+          <input type="text" value={`Ksh. ${balance}`} disabled />
+          <button>Withdraw Cash</button>
+        </div>
       </>
     );
     setDisplay(<Profile />);
@@ -139,7 +236,7 @@ const StandardUser = () => {
     <>
       <Navbarauth />
       <main id="ui-layout">
-        <aside>
+        <aside id="aside-container" className="disableSelection">
           <div className="dash-links">
             <button onClick={handleDash}>Dashboard</button>
             <button onClick={handleJobDisplay} id="jobs">
@@ -163,7 +260,11 @@ const StandardUser = () => {
             <div id="prof-pic">{uname ? uname.username : ""}</div>
           </div>
 
-          <div className="aside-toggle">
+          <div
+            className="aside-toggle"
+            id="aside-toggle"
+            onClick={handleAsideHide}
+          >
             <p>|||</p>
           </div>
         </aside>
@@ -174,7 +275,20 @@ const StandardUser = () => {
           </div>
 
           <div className="dash-body" id="dash-body">
-            {display}
+            {display ? (
+              display
+            ) : (
+              <>
+                <div className="welcome">
+                  <p>
+                    Welcome, {uname.fname} <br /> Mama Fua App ensures a high
+                    standard of cleaning by connecting users with vetted and
+                    experienced cleaners, offering a trusted solution for
+                    maintaining clean and comfortable living spaces.
+                  </p>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </main>

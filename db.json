@@ -12,20 +12,9 @@
       "cpassword": "123"
     },
     {
-      "id": "123456",
-      "fname": "Odhiambo",
-      "lname": "Moses",
-      "gender": "on",
-      "location": "Nairobi",
-      "accType": "Personal",
-      "username": "odhiambomoses08",
-      "password": "123",
-      "cpassword": "123"
-    },
-    {
       "id": "668800",
-      "fname": "goody",
-      "lname": "ndahi",
+      "fname": "Goody",
+      "lname": "Ndahi",
       "gender": "on",
       "location": "Nairobi",
       "accType": "Personal",
@@ -42,7 +31,32 @@
       "accType": "Personal",
       "username": "zakayo24",
       "password": "zakayo24",
-      "cpassword": "zakayo24"
+      "cpassword": "zakayo24",
+      "balance": "0"
+    },
+    {
+      "id": "123449",
+      "fname": "Erick",
+      "lname": "Otieno",
+      "gender": "male",
+      "location": "Mombassa",
+      "accType": "Personal",
+      "username": "erick24",
+      "password": "erick24",
+      "cpassword": "erick24",
+      "balance": "0"
+    },
+    {
+      "id": "2345428",
+      "fname": "Ben",
+      "lname": "Were",
+      "gender": "male",
+      "location": "Nakuru",
+      "accType": "Personal",
+      "username": "ben",
+      "password": "123",
+      "cpassword": "123",
+      "balance": "3000"
     }
   ],
   "isLogged": [
@@ -534,6 +548,216 @@
       "id": "63c0",
       "username": "odhiambomoses08",
       "logged": true
+    },
+    {
+      "id": "8574",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "99f2",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "124f",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "4fbe",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "0f3b",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "4aec",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "0b11",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "b403",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "127e",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "a44c",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "4890",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "7006",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "2bf2",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "2437",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "9b33",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "e54c",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "7135",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "c238",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "aa5c",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "0525",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "4e2e",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "0acc",
+      "username": "zakayo24",
+      "logged": true
+    },
+    {
+      "id": "e5fe",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "7f1a",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "32df",
+      "username": "zakayo24",
+      "logged": true
+    },
+    {
+      "id": "6421",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "67ac",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "00bb",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "d307",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "8e82",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "925d",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "2da4",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "c5ce",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "9ce7",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "76ad",
+      "username": "erick24",
+      "logged": true
+    },
+    {
+      "id": "afec",
+      "username": "ben",
+      "logged": true
+    },
+    {
+      "id": "bf01",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "d988",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "2886",
+      "username": "zakayo24",
+      "logged": true
+    },
+    {
+      "id": "4b3e",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "3bbe",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "0cb6",
+      "username": "odhiambomoses08",
+      "logged": true
     }
   ],
   "jobs": [
@@ -541,75 +765,294 @@
       "name": "Glad Technolgy",
       "location": "Nakuru",
       "type": "3 Bedroom",
-      "date": "15th August, 2024"
+      "date": "15th August, 2024",
+      "staff": "",
+      "id": "b088"
     },
     {
       "name": "Diani Beach",
       "location": "Mombassa",
       "type": "2 Bedroom",
-      "date": "20th September, 2024"
+      "date": "20th September, 2024",
+      "staff": "",
+      "id": "01b7"
     },
     {
       "name": "State House",
       "location": "Eldoret",
       "type": "1 Bedroom",
-      "date": "17th January, 2025"
+      "date": "17th January, 2025",
+      "staff": "",
+      "id": "d5a0"
     },
     {
       "name": "Diani Beach",
       "location": "Mombassa",
       "type": "2 Bedroom",
-      "date": "20th September, 2024"
+      "date": "20th September, 2024",
+      "staff": "",
+      "id": "81e0"
     },
     {
       "name": "State House",
       "location": "Eldoret",
       "type": "1 Bedroom",
-      "date": "17th January, 2025"
+      "date": "17th January, 2025",
+      "staff": "",
+      "id": "9811"
     },
     {
       "name": "Diani Beach",
       "location": "Mombassa",
       "type": "2 Bedroom",
-      "date": "20th September, 2024"
+      "date": "20th September, 2024",
+      "staff": "",
+      "id": "d43c"
     },
     {
       "name": "State House",
       "location": "Eldoret",
       "type": "1 Bedroom",
-      "date": "17th January, 2025"
+      "date": "17th January, 2025",
+      "staff": "",
+      "id": "c2e3"
     },
     {
       "name": "SwafeSwafe House",
       "location": "Nairobi",
       "type": "4 Bedroom",
-      "date": "1st September, 2024"
+      "date": "1st September, 2024",
+      "staff": "",
+      "id": "5018"
+    },
+    {
+      "id": "02a2",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "odhiambomoses08"
+    },
+    {
+      "id": "aa1d",
+      "name": "Diani Beach",
+      "location": "Mombassa",
+      "type": "2 Bedroom",
+      "date": "20th September, 2024",
+      "staff": "odhiambomoses08"
+    },
+    {
+      "id": "7047",
+      "name": "State House",
+      "location": "Eldoret",
+      "type": "1 Bedroom",
+      "date": "17th January, 2025",
+      "staff": "odhiambomoses08"
+    },
+    {
+      "id": "b9e9",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "lapster"
     }
   ],
   "userjobs": [
     {
-      "username": "lapster",
-      "location": "Nairobi",
-      "jobPicked": "type",
-      "deadline": "type date"
+      "id": "a275",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "",
+      "job": {
+        "name": "Glad Technolgy",
+        "location": "Nakuru",
+        "type": "3 Bedroom",
+        "date": "15th August, 2024",
+        "staff": ""
+      }
     },
     {
-      "username": "lapster",
-      "location": "Nairobi",
-      "jobPicked": "type",
-      "deadline": "type date"
-    },
-    {
-      "username": "odhiambomoses08",
-      "location": "Kisumu",
-      "jobPicked": "type",
-      "deadline": "type date"
-    },
-    {
-      "username": "odhiambomoses08",
+      "id": "ba4d",
+      "name": "Diani Beach",
       "location": "Mombassa",
-      "jobPicked": "type",
-      "deadline": "type date"
+      "type": "2 Bedroom",
+      "date": "20th September, 2024",
+      "staff": "",
+      "job": {
+        "name": "Diani Beach",
+        "location": "Mombassa",
+        "type": "2 Bedroom",
+        "date": "20th September, 2024",
+        "staff": ""
+      }
+    },
+    {
+      "id": "d4cb",
+      "name": "State House",
+      "location": "Eldoret",
+      "type": "1 Bedroom",
+      "date": "17th January, 2025",
+      "staff": "",
+      "job": {
+        "name": "State House",
+        "location": "Eldoret",
+        "type": "1 Bedroom",
+        "date": "17th January, 2025",
+        "staff": ""
+      }
+    },
+    {
+      "id": "525f",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "",
+      "job": {
+        "name": "Glad Technolgy",
+        "location": "Nakuru",
+        "type": "3 Bedroom",
+        "date": "15th August, 2024",
+        "staff": ""
+      }
+    },
+    {
+      "id": "465d",
+      "name": "Diani Beach",
+      "location": "Mombassa",
+      "type": "2 Bedroom",
+      "date": "20th September, 2024",
+      "staff": "",
+      "username": "lapster"
+    },
+    {
+      "id": "66dc",
+      "name": "State House",
+      "location": "Eldoret",
+      "type": "1 Bedroom",
+      "date": "17th January, 2025",
+      "staff": "",
+      "username": "lapster"
+    },
+    {
+      "id": "cd1e",
+      "name": "State House",
+      "location": "Eldoret",
+      "type": "1 Bedroom",
+      "date": "17th January, 2025",
+      "staff": "",
+      "username": "odhiambomoses08"
+    },
+    {
+      "id": "391d",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "",
+      "username": "lapster"
+    },
+    {
+      "id": "2940",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "",
+      "username": "lapster"
+    },
+    {
+      "id": "7145",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "",
+      "username": "lapster"
+    },
+    {
+      "id": "3ab5",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "",
+      "username": "lapster"
+    },
+    {
+      "id": "2b4c",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "",
+      "username": "lapster"
+    },
+    {
+      "id": "e010",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "",
+      "username": "lapster"
+    },
+    {
+      "id": "281a",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "",
+      "username": "lapster"
+    },
+    {
+      "id": "ce74",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "",
+      "username": "lapster"
+    },
+    {
+      "id": "3cbb",
+      "name": "State House",
+      "location": "Eldoret",
+      "type": "1 Bedroom",
+      "date": "17th January, 2025",
+      "staff": "",
+      "username": "lapster"
+    },
+    {
+      "id": "02a2",
+      "name": "Glad Technolgy",
+      "location": "Nakuru",
+      "type": "3 Bedroom",
+      "date": "15th August, 2024",
+      "staff": "odhiambomoses08",
+      "username": "lapster"
+    },
+    {
+      "id": "5029",
+      "name": "Diani Beach",
+      "location": "Mombassa",
+      "type": "2 Bedroom",
+      "date": "20th September, 2024",
+      "staff": "",
+      "username": "odhiambomoses08"
+    },
+    {
+      "id": "d5a0",
+      "name": "State House",
+      "location": "Eldoret",
+      "type": "1 Bedroom",
+      "date": "17th January, 2025",
+      "staff": "",
+      "username": "odhiambomoses08"
     }
   ]
 }

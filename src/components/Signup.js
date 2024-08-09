@@ -16,6 +16,7 @@ function Signup() {
     username: "",
     password: "",
     cpassword: "",
+    balance: "0",
   });
 
   const [errors, setErrors] = useState({});
@@ -84,6 +85,7 @@ function Signup() {
                   type="radio"
                   name="gender"
                   id="male"
+                  value="male"
                   onChange={(event) =>
                     setFormData({ ...FormData, gender: event.target.value })
                   }
@@ -93,6 +95,7 @@ function Signup() {
                   type="radio"
                   name="gender"
                   id="female"
+                  value="female"
                   onChange={(event) =>
                     setFormData({ ...FormData, gender: event.target.value })
                   }
