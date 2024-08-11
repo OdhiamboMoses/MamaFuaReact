@@ -34,7 +34,7 @@
       "lname": "Zakayo",
       "gender": "male",
       "location": "Nakuru",
-      "accType": "Personal",
+      "accType": "Apartment Owner",
       "username": "zakayo24",
       "password": "zakayo24",
       "cpassword": "zakayo24",
@@ -67,7 +67,7 @@
       "password": "123",
       "cpassword": "123",
       "balance": "3000",
-      "email": "",
+      "email": "wereben@gmail.com",
       "type": "standard"
     },
     {
@@ -867,6 +867,11 @@
     },
     {
       "id": "670d",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "46d0",
       "username": "odhiambomoses08",
       "logged": true
     }

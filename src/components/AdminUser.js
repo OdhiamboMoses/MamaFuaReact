@@ -14,6 +14,16 @@ const AdminUser = () => {
   const [balance, setBalance] = useState("0");
   const [email, setEmail] = useState("");
   const [users, setUsers] = useState([]);
+  const [owners, setOwners] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:8000/users").then((result) => {
+      const owners = result.data.filter(
+        (user) => user.accType === "Apartment Owner"
+      );
+      setOwners(owners);
+    });
+  }, []);
 
   useEffect(() => {
     axios.get("http://localhost:8000/users").then((result) => {
@@ -242,6 +252,49 @@ const AdminUser = () => {
     setDisplay(<Users />);
   }
 
+  function handleOwners() {
+    const Owners = () => (
+      <>
+        <h1>Apartments Owners List</h1>
+        <div className="form-body">
+          <table className="user-table">
+            <thead>
+              <tr>
+                <td>No</td>
+                <td>ID</td>
+                <td>FName</td>
+                <td>Lname</td>
+                <td>Gender</td>
+                <td>Location</td>
+                <td>Acc Type</td>
+                <td>Email</td>
+                <td>Update</td>
+              </tr>
+            </thead>
+            <tbody>
+              {owners.map((user, index) => (
+                <tr id={index + 1}>
+                  <td>{index + 1}</td>
+                  <td>{user.id}</td>
+                  <td>{user.fname}</td>
+                  <td>{user.lname}</td>
+                  <td>{user.gender}</td>
+                  <td>{user.location}</td>
+                  <td>{user.accType}</td>
+                  <td>{user.email}</td>
+                  <td>
+                    <button>Edit</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>
+    );
+    setDisplay(<Owners />);
+  }
+
   function handleProfile() {
     const Profile = () => (
       <>
@@ -309,6 +362,9 @@ const AdminUser = () => {
             </button>
             <button onClick={handleUsers}>
               <Link>Users</Link>
+            </button>
+            <button onClick={handleOwners}>
+              <Link>Apartments Owners</Link>
             </button>
             <button onClick={handleProfile}>
               <Link>Profile</Link>
