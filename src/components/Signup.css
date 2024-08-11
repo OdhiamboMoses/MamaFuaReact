@@ -99,3 +99,35 @@ span {
   text-align: center;
   border: 1px solid red;
 }
+
+@media (max-width: 550px) {
+  #signup-form {
+    width: 100%;
+    display: block;
+  }
+  fieldset {
+    width: 60%;
+  }
+  input,
+  .inp {
+    width: 60%;
+    margin-left: 10px;
+  }
+  #signup-form #verification {
+    width: 80%;
+    margin: 10px;
+  }
+  #acc-info {
+    width: 80%;
+  }
+  #gender {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+  }
+  #gender label {
+    display: inline-block;
+  }
+}

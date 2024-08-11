@@ -6,7 +6,9 @@ aside {
   box-shadow: 2px -1px 3px #736d6d;
   position: relative;
 }
-
+#aside-container {
+  display: block;
+}
 .aside-toggle {
   position: absolute;
   height: 70px;

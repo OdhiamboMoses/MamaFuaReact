@@ -80,28 +80,32 @@ function Signup() {
                 />
               </fieldset>
 
-              <fieldset>
+              <fieldset id="gender">
                 <legend>Choose Gender</legend>
-                <label htmlFor="male">Male</label>
-                <input
-                  type="radio"
-                  name="gender"
-                  id="male"
-                  value="male"
-                  onChange={(event) =>
-                    setFormData({ ...FormData, gender: event.target.value })
-                  }
-                />
-                <label htmlFor="female">Female</label>
-                <input
-                  type="radio"
-                  name="gender"
-                  id="female"
-                  value="female"
-                  onChange={(event) =>
-                    setFormData({ ...FormData, gender: event.target.value })
-                  }
-                />
+                <div>
+                  <label htmlFor="male">Male</label>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="male"
+                    onChange={(event) =>
+                      setFormData({ ...FormData, gender: event.target.value })
+                    }
+                  />
+                </div>
+                <div>
+                  <label htmlFor="female">Female</label>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                    onChange={(event) =>
+                      setFormData({ ...FormData, gender: event.target.value })
+                    }
+                  />
+                </div>
               </fieldset>
               <div className="location-container">
                 <label htmlFor="location">Location</label>

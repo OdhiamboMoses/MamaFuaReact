@@ -59,6 +59,8 @@
   color: #138817;
   z-index: 101;
   box-shadow: 1px 2px 2px black;
+  z-index: 111;
+  cursor: pointer;
 }
 .bigger {
   font-size: 3rem;
@@ -67,4 +69,66 @@
 i:hover {
   cursor: pointer;
   color: #138817;
+}
+
+#message {
+  height: 390px;
+  width: 450px;
+  position: absolute;
+  border-radius: 15px;
+  background-color: #138817;
+  box-shadow: 1px 2px 7px;
+  right: 10px;
+  bottom: 90px;
+  z-index: 110;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.message-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #736d6d;
+  color: whitesmoke;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 1px;
+}
+
+#message-body {
+  background-color: whitesmoke;
+  width: 98%;
+  height: 63%;
+  margin: 5px auto;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.message-footer {
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.message-footer input {
+  width: 80%;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+.card {
+  border: 1px solid;
+  width: 70%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  color: #736d6d;
+  padding: 10px;
+  box-shadow: 1px 2px 7px #138817;
 }

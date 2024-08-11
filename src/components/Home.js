@@ -20,6 +20,44 @@ function Home() {
     const homeBg = document.getElementById("home");
     homeBg.style.backgroundImage = `url(${bg1}`;
   }
+
+  function handleMessage() {
+    const messageWindow = document.getElementById("message");
+    messageWindow.style.display = "block";
+  }
+
+  function handleMClose() {
+    const dis = document.getElementById("message");
+    dis.style.display = "none";
+  }
+
+  function handleSendMeso() {
+    const meso = document.getElementById("meso");
+    const sms = meso.value;
+    const mBody = document.getElementById("message-body");
+    if (sms !== "") {
+      const card = document.createElement("div");
+      card.textContent = sms;
+      card.classList.add("card");
+      mBody.appendChild(card);
+      meso.value = "";
+    }
+  }
+
+  function hanldeEnter(e) {
+    const meso = document.getElementById("meso");
+    const sms = meso.value;
+    const mBody = document.getElementById("message-body");
+    if (e.onKeyDown === "Enter") {
+      if (sms !== "") {
+        const card = document.createElement("div");
+        card.textContent = sms;
+        card.classList.add("card");
+        mBody.appendChild(card);
+        meso.value = "";
+      }
+    }
+  }
   return (
     <>
       <Navbar />
@@ -32,10 +70,21 @@ function Home() {
           </h2>
         </div>
         <div className="home-display-footer">
-          <div id="chatBtn">
+          <div id="chatBtn" onClick={handleMessage}>
             <i>
               <FontAwesomeIcon icon={faMessage} />
             </i>
+          </div>
+          <div id="message">
+            <div className="message-title">
+              <p>Message</p>
+              <button onClick={handleMClose}>X</button>
+            </div>
+            <div id="message-body"></div>
+            <div className="message-footer">
+              <input type="text" id="meso" onKeyDown={(e) => hanldeEnter} />
+              <button onClick={handleSendMeso}>Send</button>
+            </div>
           </div>
         </div>
         <div className="bg-btn">
