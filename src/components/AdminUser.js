@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./Standarduser.css";
+import "./AdminUser.css";
 import Navbarauth from "./Navbarauth";
 import axios from "axios";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 
-const StandardUser = () => {
+const AdminUser = () => {
   const [jobs, setJobs] = useState([]);
   const navigate = useNavigate();
   const [uname, setName] = useState([]);
@@ -13,7 +13,14 @@ const StandardUser = () => {
   const [location, setLocation] = useState("");
   const [balance, setBalance] = useState("0");
   const [email, setEmail] = useState("");
-  const [support, setSupport] = useState({});
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:8000/users").then((result) => {
+      const mama = result.data.filter((user) => user.type === "standard");
+      setUsers(mama);
+    });
+  }, []);
 
   useEffect(() => {
     const username = JSON.parse(localStorage.getItem("username"));
@@ -162,7 +169,6 @@ const StandardUser = () => {
     const Notifications = () => (
       <>
         <h1>Your Notifications</h1>
-        {/* Add your notification rendering logic here */}
         <div>
           <table id="notification-table">
             <thead>
@@ -193,50 +199,47 @@ const StandardUser = () => {
     setDisplay(<Notifications />);
   }
 
-  function supportRequest(e) {
-    e.preventDefault();
-    axios
-      .post("http://localhost:8000/support", support)
-      .then((result) => {})
-      .catch((err) => console.log(err));
-  }
-
-  function handleSupport() {
-    const Support = () => (
+  function handleUsers() {
+    const Users = () => (
       <>
-        <h1>Admin Support</h1>
-        {
-          /* Add your support rendering logic here */
-          <div className="form-body">
-            <div className="left"></div>
-            <form id="support-form" onSubmit={supportRequest}>
-              <h2>Support Form</h2>
-              <label>Enter Email</label>
-              <input
-                type="email"
-                id="email"
-                onChange={(event) =>
-                  setSupport({ ...support, email: event.target.value })
-                }
-              />
-
-              <label>Support Subject</label>
-              <textarea
-                rows="5"
-                cols="6"
-                id="message"
-                onChange={(event) =>
-                  setSupport({ ...support, message: event.target.value })
-                }
-              ></textarea>
-
-              <button className="btn">Send Message</button>
-            </form>
-          </div>
-        }
+        <h1>Users</h1>
+        <div className="form-body">
+          <table className="user-table">
+            <thead>
+              <tr>
+                <td>No</td>
+                <td>ID</td>
+                <td>FName</td>
+                <td>Lname</td>
+                <td>Gender</td>
+                <td>Location</td>
+                <td>Acc Type</td>
+                <td>Email</td>
+                <td>Update</td>
+              </tr>
+            </thead>
+            <tbody>
+              {users.map((user, index) => (
+                <tr id={index + 1}>
+                  <td>{index + 1}</td>
+                  <td>{user.id}</td>
+                  <td>{user.fname}</td>
+                  <td>{user.lname}</td>
+                  <td>{user.gender}</td>
+                  <td>{user.location}</td>
+                  <td>{user.accType}</td>
+                  <td>{user.email}</td>
+                  <td>
+                    <button>Edit</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </>
     );
-    setDisplay(<Support />);
+    setDisplay(<Users />);
   }
 
   function handleProfile() {
@@ -304,8 +307,8 @@ const StandardUser = () => {
             <button onClick={handleNotifications}>
               <Link>Notifications</Link>
             </button>
-            <button onClick={handleSupport}>
-              <Link>Support</Link>
+            <button onClick={handleUsers}>
+              <Link>Users</Link>
             </button>
             <button onClick={handleProfile}>
               <Link>Profile</Link>
@@ -327,7 +330,9 @@ const StandardUser = () => {
 
         <div id="display">
           <div className="dash-title">
-            <h2>{uname ? uname.fname + " " + uname.lname : ""} Dashboard</h2>
+            <h2>
+              {uname ? uname.fname + " " + uname.lname : ""} Admin Dashboard
+            </h2>
           </div>
 
           <div className="dash-body" id="dash-body">
@@ -352,4 +357,4 @@ const StandardUser = () => {
   );
 };
 
-export default StandardUser;
+export default AdminUser;

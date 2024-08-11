@@ -4,7 +4,7 @@
       "id": "1234567",
       "fname": "Odhiambo",
       "lname": "Moses",
-      "gender": "on",
+      "gender": "male",
       "location": "Nairobi",
       "accType": "Personal",
       "username": "odhiambomoses08",
@@ -18,28 +18,28 @@
       "id": "668800",
       "fname": "Goody",
       "lname": "Ndahi",
-      "gender": "on",
+      "gender": "male",
       "location": "Nairobi",
       "accType": "Personal",
       "username": "lapster",
       "password": "qwerty",
       "cpassword": "qwerty",
       "balance": "0",
-      "email": "",
+      "email": "goodmanndahiriwe005@gmail.com",
       "type": "standard"
     },
     {
       "id": "234567",
       "fname": "Zach",
       "lname": "Zakayo",
-      "gender": "on",
+      "gender": "male",
       "location": "Nakuru",
       "accType": "Personal",
       "username": "zakayo24",
       "password": "zakayo24",
       "cpassword": "zakayo24",
       "balance": "0",
-      "email": "",
+      "email": "zakayo24@gmail.com",
       "type": "standard"
     },
     {
@@ -53,7 +53,8 @@
       "password": "erick24",
       "cpassword": "erick24",
       "balance": "0",
-      "email": ""
+      "email": "otienoerick@gmail.com",
+      "type": "standard"
     },
     {
       "id": "2345428",
@@ -66,7 +67,22 @@
       "password": "123",
       "cpassword": "123",
       "balance": "3000",
-      "email": ""
+      "email": "",
+      "type": "standard"
+    },
+    {
+      "id": "3456734",
+      "fname": "Irene",
+      "lname": "Atieno",
+      "gender": "female",
+      "location": "Nairobi",
+      "accType": "Personal",
+      "username": "irene45",
+      "password": "irene45",
+      "cpassword": "irene45",
+      "balance": "0",
+      "email": "irene45@gmail.com",
+      "type": "standard"
     }
   ],
   "isLogged": [
@@ -782,6 +798,76 @@
     {
       "id": "0093",
       "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "b674",
+      "username": "irene45",
+      "logged": true
+    },
+    {
+      "id": "b1e6",
+      "username": "irene45",
+      "logged": true
+    },
+    {
+      "id": "5f8f",
+      "username": "irene45",
+      "logged": true
+    },
+    {
+      "id": "de2a",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "c6f8",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "ae30",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "065a",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "9745",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "240f",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "718b",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "9811",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "368c",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "89d2",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "670d",
+      "username": "odhiambomoses08",
       "logged": true
     }
   ],

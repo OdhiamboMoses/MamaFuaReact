@@ -97,4 +97,5 @@ legend {
 span {
   color: red;
   text-align: center;
+  border: 1px solid red;
 }

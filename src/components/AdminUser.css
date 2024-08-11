@@ -1,0 +1,26 @@
+.user-table {
+  width: 80%;
+  border-collapse: collapse;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-shadow: 1px 2px 5px;
+}
+.user-table thead tr {
+  background-color: royalblue;
+  color: whitesmoke;
+}
+
+.user-table tbody tr {
+  background-color: #444;
+  color: whitesmoke;
+}
+
+.user-table tbody tr:hover {
+  background-color: whitesmoke;
+  color: #444;
+}
+
+.user-table button:hover {
+  background-color: green;
+  color: whitesmoke;
+  cursor: pointer;
+}

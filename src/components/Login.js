@@ -50,21 +50,21 @@ function Login() {
                 username: FormData.username,
                 logged: true,
               });
-              navigate("../standardUser");
+
+              if (user.type === "standard") {
+                navigate("../standardUser");
+              } else if (user.type === "admin") {
+                navigate("/AdminUser");
+              }
             } else {
               isValid = false;
               validationErrors.password = "Wrong Password";
             }
-          } else {
-            validationErrors.username = "Username does not exist";
-            setErrors(validationErrors);
-            isValid = false;
           }
         });
 
-        if (!userFound && FormData.username === "") {
-          isValid = false;
-          validationErrors.username = "Username is required";
+        if (!userFound) {
+          validationErrors.username = "Username does not exist";
         }
 
         setErrors(validationErrors);
@@ -112,7 +112,7 @@ function Login() {
               <div id="auth-error">
                 {valid ? null : (
                   <span>
-                    {`${errors.password} or `} {errors.username}
+                    {`${errors.password}.`} {errors.username}
                   </span>
                 )}
               </div>

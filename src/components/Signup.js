@@ -44,6 +44,7 @@ function Signup() {
         })
         .catch((err) => console.log(err));
     }
+    console.log(FormData);
   };
   return (
     <>
@@ -179,6 +180,17 @@ function Signup() {
                     setFormData({ ...FormData, username: event.target.value })
                   }
                 />
+                <label htmlFor="email">Enter Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="inp"
+                  placeholder="Enter Email"
+                  onChange={(event) =>
+                    setFormData({ ...FormData, email: event.target.value })
+                  }
+                />
                 <label htmlFor="password">Enter Password</label>
                 <input
                   type="password"
@@ -202,7 +214,14 @@ function Signup() {
                   }
                 />
               </fieldset>
-              {valid ? <></> : <span>{errors.cpassword}</span>}
+              {valid ? (
+                <></>
+              ) : (
+                <span>
+                  {errors.cpassword}
+                  {errors.username}
+                </span>
+              )}
               <button id="signup-btn" type="submit">
                 SIGN-UP
               </button>
