@@ -24,6 +24,16 @@ const Navbarauth = () => {
       nav.classList.add("anim");
     }
   }
+
+  function handleAsideDisplay() {
+    const sideNav = document.getElementById("aside-container");
+    console.log(sideNav);
+    if (sideNav.style.display === "none") {
+      sideNav.style.display = "block";
+    } else {
+      sideNav.style.display = "none";
+    }
+  }
   return (
     <nav className="navbar">
       <div className="logo">
@@ -53,6 +63,9 @@ const Navbarauth = () => {
           id="close-btn"
         />
         <ul>
+          <li>
+            <p onClick={handleAsideDisplay}>Navigation</p>
+          </li>
           <li>
             <Link to="/login">SIGN-OUT</Link>
           </li>

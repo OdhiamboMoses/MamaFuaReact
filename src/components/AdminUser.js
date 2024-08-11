@@ -180,7 +180,7 @@ const AdminUser = () => {
       <>
         <h1>Your Notifications</h1>
         <div>
-          <table id="notification-table">
+          <table id="notification-table" className="user-table">
             <thead>
               <tr>
                 <th>No</th>
