@@ -55,6 +55,7 @@
   margin: auto;
   display: none;
   box-shadow: 1px 2px 1px #444;
+  border-radius: 3px;
 }
 
 .update-title {

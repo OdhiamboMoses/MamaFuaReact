@@ -24,15 +24,32 @@ function Signup() {
   const [errors, setErrors] = useState({});
   const [valid, setValid] = useState(true);
   const navigate = useNavigate();
+  const [check, setCheck] = useState([]);
+
+  axios.get("http://localhost:8000/users").then((res) => {
+    const unameCheck = res.data.filter(
+      (user) => user.username === FormData.username
+    );
+    setCheck(unameCheck);
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     let isValid = true;
     let validationErrors = {};
 
+    if (FormData.password.length < 8) {
+      isValid = false;
+      validationErrors.password = "Password must be 8 characters and above.";
+    }
     if (FormData.password !== FormData.cpassword) {
       isValid = false;
       validationErrors.cpassword = "Password Must Match.";
+    }
+    if (check.length > 0) {
+      isValid = false;
+      validationErrors.check =
+        "Username Exist please login if you have an account.";
     }
     setErrors(validationErrors);
     setValid(isValid);
@@ -44,7 +61,8 @@ function Signup() {
         })
         .catch((err) => console.log(err));
     }
-    console.log(FormData);
+    // console.log(FormData);
+    // console.log(check);
   };
   return (
     <>
@@ -203,7 +221,10 @@ function Signup() {
                   className="inp"
                   placeholder="Enter Password"
                   onChange={(event) =>
-                    setFormData({ ...FormData, password: event.target.value })
+                    setFormData({
+                      ...FormData,
+                      password: window.btoa(event.target.value),
+                    })
                   }
                 />
                 <label htmlFor="cpassword">Confirm Password</label>
@@ -214,7 +235,10 @@ function Signup() {
                   className="inp"
                   placeholder="Confirm Password"
                   onChange={(event) =>
-                    setFormData({ ...FormData, cpassword: event.target.value })
+                    setFormData({
+                      ...FormData,
+                      cpassword: window.btoa(event.target.value),
+                    })
                   }
                 />
               </fieldset>
@@ -222,8 +246,10 @@ function Signup() {
                 <></>
               ) : (
                 <span>
+                  {errors.password}
                   {errors.cpassword}
                   {errors.username}
+                  {errors.check}
                 </span>
               )}
               <button id="signup-btn" type="submit">

@@ -35,7 +35,7 @@ function Login() {
         result.data.forEach((user) => {
           if (user.username === FormData.username) {
             userFound = true;
-            if (user.password === FormData.password) {
+            if (user.password === window.btoa(FormData.password)) {
               // Set the user session in localStorage
               localStorage.setItem(
                 "username",

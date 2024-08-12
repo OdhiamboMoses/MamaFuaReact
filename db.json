@@ -1,20 +1,6 @@
 {
   "users": [
     {
-      "id": "1234567",
-      "fname": "Odhiambo",
-      "lname": "Moses",
-      "gender": "male",
-      "location": "Nairobi",
-      "accType": "Personal",
-      "username": "odhiambomoses08",
-      "password": "123",
-      "cpassword": "123",
-      "balance": "0",
-      "email": "odhiambomoses08@gmail.com",
-      "type": "admin"
-    },
-    {
       "id": "668800",
       "fname": "Goody",
       "lname": "Ndahi",
@@ -83,6 +69,34 @@
       "balance": "0",
       "email": "irene45@gmail.com",
       "type": "standard"
+    },
+    {
+      "id": "234567",
+      "fname": "Wilfred",
+      "lname": "Bahati",
+      "gender": "male",
+      "location": "Siaya",
+      "accType": "Personal",
+      "username": "bahati47",
+      "password": "YmFoYXRpNDc=",
+      "cpassword": "YmFoYXRpNDc=",
+      "balance": "0",
+      "email": "bahati47@gmail.com",
+      "type": "standard"
+    },
+    {
+      "id": "234565",
+      "fname": "Odhiambo",
+      "lname": "Moses",
+      "gender": "male",
+      "location": "Siaya",
+      "accType": "Personal",
+      "username": "odhiambomoses08",
+      "password": "TW90aXZhdGlvbg==",
+      "cpassword": "TW90aXZhdGlvbg==",
+      "balance": "0",
+      "email": "odhiambomoses08@gmail.com",
+      "type": "admin"
     }
   ],
   "isLogged": [
@@ -907,6 +921,31 @@
     },
     {
       "id": "8686",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "c317",
+      "username": "lapster",
+      "logged": true
+    },
+    {
+      "id": "65da",
+      "username": "bahati47",
+      "logged": true
+    },
+    {
+      "id": "958d",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "00ba",
+      "username": "bahati47",
+      "logged": true
+    },
+    {
+      "id": "84ac",
       "username": "odhiambomoses08",
       "logged": true
     }
