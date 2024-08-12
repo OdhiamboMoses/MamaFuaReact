@@ -208,6 +208,14 @@ const AdminUser = () => {
     );
     setDisplay(<Notifications />);
   }
+  function handleUpdate() {
+    const updateWindow = document.getElementById("user-update");
+    updateWindow.style.display = "block";
+  }
+  function handleUpdateClose() {
+    const updateWindow = document.getElementById("user-update");
+    updateWindow.style.display = "none";
+  }
 
   function handleUsers() {
     const Users = () => (
@@ -240,12 +248,18 @@ const AdminUser = () => {
                   <td>{user.accType}</td>
                   <td>{user.email}</td>
                   <td>
-                    <button>Edit</button>
+                    <button onClick={handleUpdate}>Edit</button>
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
+          <div id="user-update">
+            <div className="update-title">
+              <h3>Account Update Interface</h3>
+              <button onClick={handleUpdateClose}>X</button>
+            </div>
+          </div>
         </div>
       </>
     );
@@ -283,12 +297,18 @@ const AdminUser = () => {
                   <td>{user.accType}</td>
                   <td>{user.email}</td>
                   <td>
-                    <button>Edit</button>
+                    <button onClick={handleUpdate}>Edit</button>
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
+          <div id="user-update">
+            <div className="update-title">
+              <h3>Owners Update Interface</h3>
+              <button onClick={handleUpdateClose}>X</button>
+            </div>
+          </div>
         </div>
       </>
     );

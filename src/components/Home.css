@@ -81,7 +81,15 @@ i:hover {
   right: 10px;
   bottom: 90px;
   z-index: 110;
+  display: none;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#message button:hover {
+  background-color: whitesmoke;
+  color: royalblue;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .message-title {

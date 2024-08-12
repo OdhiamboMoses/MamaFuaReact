@@ -224,7 +224,7 @@ const StandardUser = () => {
               <textarea
                 rows="5"
                 cols="6"
-                id="message"
+                id="home-message"
                 onChange={(event) =>
                   setSupport({ ...support, message: event.target.value })
                 }

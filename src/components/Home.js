@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import bg2 from "./images/bg2.avif";
@@ -44,20 +44,6 @@ function Home() {
     }
   }
 
-  function hanldeEnter(e) {
-    const meso = document.getElementById("meso");
-    const sms = meso.value;
-    const mBody = document.getElementById("message-body");
-    if (e.onKeyDown === "Enter") {
-      if (sms !== "") {
-        const card = document.createElement("div");
-        card.textContent = sms;
-        card.classList.add("card");
-        mBody.appendChild(card);
-        meso.value = "";
-      }
-    }
-  }
   return (
     <>
       <Navbar />
@@ -82,7 +68,7 @@ function Home() {
             </div>
             <div id="message-body"></div>
             <div className="message-footer">
-              <input type="text" id="meso" onKeyDown={(e) => hanldeEnter} />
+              <input type="text" id="meso" placeholder="Enter Message..." />
               <button onClick={handleSendMeso}>Send</button>
             </div>
           </div>
