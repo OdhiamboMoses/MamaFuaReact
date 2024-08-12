@@ -259,7 +259,34 @@ const AdminUser = () => {
               <h3>Account Update Interface</h3>
               <button onClick={handleUpdateClose}>X</button>
             </div>
-            <div className="update-body"></div>
+            <div className="update-body">
+              <form>
+                <div>
+                  <label htmlFor="fname">First Name</label>
+                  <input type="text" name="fname" />
+                </div>
+                <div>
+                  <label htmlFor="lname">Last Name</label>
+                  <input type="text" name="lname" />
+                </div>
+                <div>
+                  <label htmlFor="gender">Gender</label>
+                  <input type="text" name="gender" />
+                </div>
+                <div>
+                  <label htmlFor="location">Location</label>
+                  <input type="text" name="location" />
+                </div>
+                <div>
+                  <label htmlFor="accType">Acc type</label>
+                  <input type="text" name="accType" />
+                </div>
+                <div>
+                  <label htmlFor="email">Email</label>
+                  <input type="text" name="email" />
+                </div>
+              </form>
+            </div>
             <div className="update-footer">
               <button>Update</button>
             </div>

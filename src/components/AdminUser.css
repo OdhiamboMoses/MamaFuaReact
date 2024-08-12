@@ -75,3 +75,26 @@
   overflow-y: scroll;
   border-radius: 4px;
 }
+
+.update-body form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 50%;
+}
+
+.update-body label,
+input {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.update-body input {
+  width: 300px;
+}
+
+.update-body form div {
+  display: flex;
+  justify-content: space-between;
+}
