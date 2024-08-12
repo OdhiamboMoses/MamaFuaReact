@@ -259,6 +259,10 @@ const AdminUser = () => {
               <h3>Account Update Interface</h3>
               <button onClick={handleUpdateClose}>X</button>
             </div>
+            <div className="update-body"></div>
+            <div className="update-footer">
+              <button>Update</button>
+            </div>
           </div>
         </div>
       </>
@@ -307,6 +311,10 @@ const AdminUser = () => {
             <div className="update-title">
               <h3>Owners Update Interface</h3>
               <button onClick={handleUpdateClose}>X</button>
+            </div>
+            <div className="update-body"></div>
+            <div className="update-footer">
+              <button>Update</button>
             </div>
           </div>
         </div>

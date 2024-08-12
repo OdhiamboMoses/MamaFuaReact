@@ -948,6 +948,21 @@
       "id": "84ac",
       "username": "odhiambomoses08",
       "logged": true
+    },
+    {
+      "id": "044c",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "c24c",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "db19",
+      "username": "odhiambomoses08",
+      "logged": true
     }
   ],
   "jobs": [
@@ -1021,7 +1036,7 @@
       "location": "Nakuru",
       "type": "3 Bedroom",
       "date": "15th August, 2024",
-      "staff": "odhiambomoses08"
+      "staff": ""
     },
     {
       "id": "aa1d",
@@ -1029,7 +1044,7 @@
       "location": "Mombassa",
       "type": "2 Bedroom",
       "date": "20th September, 2024",
-      "staff": "odhiambomoses08"
+      "staff": ""
     },
     {
       "id": "7047",
@@ -1037,7 +1052,7 @@
       "location": "Eldoret",
       "type": "1 Bedroom",
       "date": "17th January, 2025",
-      "staff": "odhiambomoses08"
+      "staff": ""
     },
     {
       "id": "b9e9",
@@ -1134,7 +1149,7 @@
       "type": "1 Bedroom",
       "date": "17th January, 2025",
       "staff": "",
-      "username": "odhiambomoses08"
+      "username": ""
     },
     {
       "id": "391d",
@@ -1223,7 +1238,7 @@
       "location": "Nakuru",
       "type": "3 Bedroom",
       "date": "15th August, 2024",
-      "staff": "odhiambomoses08",
+      "staff": "",
       "username": "lapster"
     },
     {
@@ -1233,7 +1248,7 @@
       "type": "2 Bedroom",
       "date": "20th September, 2024",
       "staff": "",
-      "username": "odhiambomoses08"
+      "username": ""
     },
     {
       "id": "d5a0",
@@ -1242,7 +1257,7 @@
       "type": "1 Bedroom",
       "date": "17th January, 2025",
       "staff": "",
-      "username": "odhiambomoses08"
+      "username": ""
     }
   ],
   "support": [
