@@ -97,6 +97,34 @@
       "balance": "0",
       "email": "odhiambomoses08@gmail.com",
       "type": "admin"
+    },
+    {
+      "id": "345674",
+      "fname": "Swafe",
+      "lname": "Swafe",
+      "gender": "male",
+      "location": "Nairobi",
+      "accType": "Personal",
+      "username": "swafe24",
+      "password": "c3dhZmUyNA==",
+      "cpassword": "c3dhZmUyNA==",
+      "balance": "0",
+      "email": "swafe24@gmail.com",
+      "type": "standard"
+    },
+    {
+      "id": "234565",
+      "fname": "Lilian",
+      "lname": "Eastvold",
+      "gender": "female",
+      "location": "Nakuru",
+      "accType": "Personal",
+      "username": "lilian47",
+      "password": "TW90aXZhdGlvbkAjIQ==",
+      "cpassword": "TW90aXZhdGlvbkAjIQ==",
+      "balance": "0",
+      "email": "lilian47@gmail.com",
+      "type": "standard"
     }
   ],
   "isLogged": [
@@ -963,6 +991,46 @@
       "id": "db19",
       "username": "odhiambomoses08",
       "logged": true
+    },
+    {
+      "id": "f41a",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "21a4",
+      "username": "swafe24",
+      "logged": true
+    },
+    {
+      "id": "d922",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "fb1a",
+      "username": "swafe24",
+      "logged": true
+    },
+    {
+      "id": "b374",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "d547",
+      "username": "odhiambomoses08",
+      "logged": true
+    },
+    {
+      "id": "9489",
+      "username": "lilian47",
+      "logged": true
+    },
+    {
+      "id": "ecb5",
+      "username": "lilian47",
+      "logged": true
     }
   ],
   "jobs": [
@@ -1258,6 +1326,24 @@
       "date": "17th January, 2025",
       "staff": "",
       "username": ""
+    },
+    {
+      "id": "5018",
+      "name": "SwafeSwafe House",
+      "location": "Nairobi",
+      "type": "4 Bedroom",
+      "date": "1st September, 2024",
+      "staff": "",
+      "username": "swafe24"
+    },
+    {
+      "id": "01b7",
+      "name": "Diani Beach",
+      "location": "Mombassa",
+      "type": "2 Bedroom",
+      "date": "20th September, 2024",
+      "staff": "",
+      "username": "odhiambomoses08"
     }
   ],
   "support": [

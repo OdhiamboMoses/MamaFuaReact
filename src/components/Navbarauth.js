@@ -42,9 +42,6 @@ const Navbarauth = () => {
       <div className="nav-links">
         <ul>
           <li>
-            <Link to="/adminUser">DASHBOARD</Link>
-          </li>
-          <li>
             <Link to="/login">SIGN-OUT</Link>
           </li>
         </ul>
